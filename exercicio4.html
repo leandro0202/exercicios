@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com js</title>
+</head>
+<body>
+    <h1>dados com js v 2.0</h1>
+    <button style="padding: 20px;" onclick="clique()" >clique em mim!</button>
+    <div id="res"></div>
+    <script>
+
+        let res = document.querySelector('#res')
+        function clique(){
+            let nome = prompt("qual seu nome?")
+
+            res.innerHTML = `olá <strong>${nome}</strong> é um prazer te conehecer 🤘`
+        }
+    </script>
+</body>
+</html> 
