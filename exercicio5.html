@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros com js</title>
+</head>
+<body>
+
+    <h1>trabalhando com numeros</h1>
+
+    <button onclick="clique()"  style="padding: 30px;">clique para calcular!</button>
+
+    <div id="res">será exibido o resultado</div>
+
+    <script>
+        let res = document.querySelector("#res")
+
+        function clique(){
+            let numero = prompt("digite um numero")
+            n = Number(numero)
+
+            let doblo = n * 2
+            let metade = n / 2
+
+            res.innerHTML = `o doblo do numero ${n} é ${doblo} e ${metade} é a metade`
+        }
+    </script>
+    
+</body>
+</html>

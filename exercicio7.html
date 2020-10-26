@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com js</title>
+</head>
+<body>
+
+    <h1>Média do aluno v 1.0</h1>
+
+    <button onclick="clique()"  style="padding: 30px;"> calcular media </button>
+
+    <div id="res"></br>será exibido o resultado</div>
+
+    <script>
+        let res = document.querySelector("#res")
+
+        function clique(){
+            let nome = prompt('qual o seu nome? ')
+            let nota1 = parseFloat(prompt("digite um numero"))
+            let nota2 = parseFloat(prompt( `além de ${nota1}, qual foia a outra nota?`))
+
+
+            let media = (nota1 + nota2)/2
+
+            
+            
+            res.innerHTML = `calculando a media de <mark> ${nome}</mark> </br>`
+            res.innerHTML += `as notas do aluno <mark>${nome}</mark> são <mark>${nota1}</mark> e <mark>${nota2}</mark> </br>`
+            res.innerHTML += ` a média do aluno é <mark> ${media}</mark>`
+            
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com js</title>
+</head>
+<body>
+
+    <h1>Média do aluno v 1.0</h1>
+
+    <button onclick="clique()"  style="padding: 30px;"> clique para calcular </button>
+
+    <div id="res"></br>será exibido o resultado</div>
+
+    <script>
+        let res = document.querySelector("#res")
+
+        function pulaLinha(){
+
+            res.innerHTML += "</br>"
+        }
+
+        function clique(){
+            
+            let numero = parseFloat(prompt("digite um numero"))
+
+            res.innerHTML = `</br>o numero que será analisado é ${numero}`
+            pulaLinha()
+            pulaLinha()
+            res.innerHTML += `o valor absoluto é ${Math.abs(numero)}`
+            pulaLinha()
+            pulaLinha()
+            res.innerHTML += `a sua parte inteira é ${Math.trunc(numero)}`
+            pulaLinha()
+            pulaLinha()
+            res.innerHTML += `o valor mais proximo é ${Math.round(numero)}`
+            pulaLinha()
+            pulaLinha()
+            res.innerHTML += `a raiz quadrada é ${Math.sqrt(numero)}`
+            pulaLinha()
+            pulaLinha()
+            res.innerHTML += `a raiz cubica é ${Math.cbrt(numero)}`
+            pulaLinha()
+            pulaLinha()
+            res.innerHTML += `o valor de ${numero}² é ${numero ** 2}`
+            pulaLinha()
+            pulaLinha()
+            res.innerHTML += `o valor de ${numero}³ é ${numero ** 3}`
+
+          
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Contador de Cliques</title>
+    <style>
+        h1{
+            font-family: 'Pacifico', cursive;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> javascript externo</h1>
+
+    <button onclick='primeiroBotao()' style="padding: 30px;"> Ação1 </button>
+    <button onclick="segundoBotao()"  style="padding: 30px;"> Ação2 </button>
+    <button onclick="terceiroBotao()"  style="padding: 30px;"> Ação1 </button>
+    <button onclick="quartoBotao()"  style="padding: 30px;"> Ação2 </button>
+
+    <div id="res"></br>Vou resgistrar ações do botões acima </br></div>
+
+    <script>
+
+        let res = document.querySelector('div#res')
+
+
+        function primeiroBotao(){
+
+            
+            res.innerHTML +='</br>clicou no primeiro botão</br>'
+        
+        }
+        function segundoBotao(){
+
+            
+            res.innerHTML +='</br>clicou no segundo botão</br>'
+
+        }
+        function terceiroBotao(){
+
+            
+            res.innerHTML +='</br>clicou no terceiro botão</br>'
+
+        }
+        function quartoBotao(){
+
+            
+            res.innerHTML +='</br>clicou no quarto botão</br>'
+
+        }
+    </script>
+</body>
+</html>
+       

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior valor</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+    <h1>Maior valor</h1>
+
+    <button onclick="clique()"  style="padding: 30px;"> clique para começar</button>
+
+    <div id="res"></br>será exibido o resultado</div>
+
+    <script>
+        let res = document.querySelector("#res")
+
+        
+        function clique(){
+
+            
+            let numero1 = parseFloat(prompt('digite um numero? '))
+            let numero2= parseFloat(prompt('digite o segundo numero? '))
+
+            let maior = Math.max(numero1, numero2)
+
+            res.innerHTML = `ò maior numero entre ${numero1} e ${numero2} é ${maior}`
+
+               
+        }
+        
+
+    </script>
+    
+</body>
+</html>

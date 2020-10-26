@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros com js</title>
+</head>
+<body>
+
+    <h1>somando com numeros</h1>
+
+    <button onclick="clique()"  style="padding: 30px;">iniciar a soma!</button>
+
+    <div id="res"></br>será exibido o resultado</div>
+
+    <script>
+        let res = document.querySelector("#res")
+
+        function clique(){
+            let numero1 = Number(prompt("digite um numero"))
+            let numero2 = Number(prompt('digite outro numero'))
+
+            let soma = numero1 + numero2
+
+            
+            res.innerHTML = `</br>a soma entre <mark/> ${numero1}</mark> e <mark>${numero2}</mark> é <strong>${soma}</strong>`
+        }
+    </script>
+    
+</body>
+</html>
