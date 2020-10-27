@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do formulário</title>
+    <style>
+        h1{
+    font-family: 'Pacifico', cursive;
+    }
+
+    button{
+    padding: 30px;
+    font-size: 20px;
+    }
+    h2{
+
+        font-family: 'Pacifico', cursive;
+
+    }
+    #botao{
+
+       background-color: green;
+       padding: 5px;
+       color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Contando de 0 até um número positivo qualquer</h1>
+
+    <p>Escolha um limite final apara a contagem a partir de (digite apenas números positivos)</p>
+
+    <label for="inicio">valor final</label>
+    <input id="inicio" type="number" placeholder="apenas positivos"> 
+
+    <input type="submit" value="Contar" id="botao" onclick="clique()">
+
+    <p>aperte o botão de cima para contar</p>
+
+    <div id="res"></div>
+    
+    <script >
+
+        let res = document.getElementById("res")
+        var n = document.getElementById('inicio')
+        
+
+        function clique(){
+            
+            res.innerHTML += '<h2>contando de 1 a 10 </br></h2>'
+            c = 1
+            while( c <= n.value){
+                res.innerHTML +=`${c} 👉`
+                c++
+            }
+            res.innerHTML += '🏁 </br></br>'
+        }
+    </script>
+</body>
+</html>

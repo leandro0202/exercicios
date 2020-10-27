@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando de 10 a 1</title>
+    <style>
+        h1{
+    font-family: 'Pacifico', cursive;
+    }
+
+    button{
+    padding: 30px;
+    font-size: 20px;
+    }
+    h2{
+
+        font-family: 'Pacifico', cursive;
+
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Contagem regressiva 10 a 1</h1>
+    <button onclick="clique()">contar de 10 a 1 </button>
+    <p>aperte o botão de cima para contar</p>
+    <div id="res"></div>
+    
+    <script >
+
+        let res = document.getElementById("res")
+
+        function clique(){
+
+            res.innerHTML += '<h2>contando de 1 a 10 </br></h2>'
+
+            for (var c = 10; c >= 1; c--){
+            
+                res.innerHTML +=`<mark>${c}</mark> 👉`
+            
+
+            }
+            res.innerHTML += '🏁 </br></br>'
+        }
+    </script>
+</body>
+</html>

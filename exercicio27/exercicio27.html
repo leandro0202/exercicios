@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>Tabuada</title>
+    <style>
+        h1{
+    font-family: 'Pacifico', cursive;
+    }
+
+    button{
+    padding: 30px;
+    font-size: 20px;
+    }
+    h2{
+
+        font-family: 'Pacifico', cursive;
+
+    }
+    #botao{
+
+       background-color: green;
+       padding: 5px;
+       color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Super Tabuada"</h1>
+
+    <p>Escreva um número na caixa a seguir e te mostrarei a tabuada dele</p>
+
+    <label for="inicio">Numero:</label>
+    <input id="inicio" type="number" placeholder="Numero:"> 
+
+    <input type="submit" value="Tabuada" id="botao" onclick="clique()">
+
+    <p>aperte o botão de cima para contar</p>
+
+    <div id="res"></div>
+    
+    <script >
+
+        let res = document.getElementById("res")
+        var inicio = document.getElementById('inicio')
+
+        
+    
+
+        function clique(){
+            
+            res.innerHTML += `<h2>tubuada do ${inicio.value}</br></h2>`
+            for (c = 1; c <= 10; c++){
+                res.innerHTML += `${inicio.value} * ${c} = ${c * inicio.value}</br>`
+            }
+        
+            
+        }
+    </script>
+</body>
+</html>

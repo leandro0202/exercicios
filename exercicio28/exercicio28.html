@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>fatorial</title>
+    <style>
+        h1{
+    font-family: 'Pacifico', cursive;
+    }
+
+    button{
+    padding: 30px;
+    font-size: 20px;
+    }
+    h2{
+
+        font-family: 'Pacifico', cursive;
+
+    }
+    #botao{
+
+       background-color: green;
+       padding: 5px;
+       color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>cálulo de fatorial</h1>
+
+    <p>Escreva um número (entre 1 e 21) na caixa a seguir e te mostrarei o Fatorial dele.
+
+    </p>
+
+    <label for="inicio">Número:</label>
+    <input id="inicio" type="number" placeholder="fatorial"> 
+
+    <input type="submit" value="fatorial" id="botao" onclick="clique()">
+
+    <p>Preencha os dados acima e aperte o botão.aperte o botão de cima para contar</p>
+
+    <div id="res"></div>
+    
+    <script >
+
+        let res = document.getElementById("res")
+        let n = document.getElementById('inicio')
+
+        
+    
+
+        function clique(){
+
+           let fat = n.value
+            
+            res.innerHTML += `<h2> $calculando ${n.value}</br></h2>`
+            for(let c = n.value; c >=  2; c-- ){
+
+
+                res.innerHTML += `${c} X `
+
+                fat = fat  * (c - 1)
+                
+ 
+            }
+            res.innerHTML += ` 1 = <strong>${fat.toLocaleString('pt-BR')} </strong>`
+            
+        
+           
+        
+            
+        }
+    </script>
+</body>
+</html>
